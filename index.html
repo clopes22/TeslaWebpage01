@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="'width=device-width, initial-scale=1.0" />
+    <title>Tesla Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <nav>
+        <img
+          src="https://i.ebayimg.com/images/g/bfUAAOSw88RbDbfe/s-l1600.jpg"
+          class="logo"
+        />
+        <ul>
+          <li><a href="#" id="models">Model S</a></li>
+          <li><a href="#" id="model3">Model 3</a></li>
+          <li><a href="#" id="modelx">Model X</a></li>
+          <li><a href="#" id="modely">Model Y</a></li>
+        </ul>
+        <a href="#" class="btn">Reserve Now</a>
+      </nav>
+      <div class="info">
+        <div>
+          <h2>1.9 s</h2>
+          <p>60 mph</p>
+        </div>
+        <div>
+          <h2>200mph</h2>
+          <p>Top Speed</p>
+        </div>
+        <div>
+          <h2>369 mi</h2>
+          <p>Max Range</p>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h2 id="model">Model S</h2>
+        </div>
+      </div>
+    </div>
+    <script>
+      var header = document.getElementById("header");
+      var ms = document.getElementById("models");
+      var m3 = document.getElementById("model3");
+      var mx = document.getElementById("modelx");
+      var my = document.getElementById("modely");
+      var model = document.getElementById("model");
+
+      ms.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://images.carexpert.com.au/resize/3000/-/app/uploads/2021/06/Tesla-Model_S-2021-1600-01.jpeg)";
+        model.innerHTML = "Model S";
+      };
+      m3.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://hips.hearstapps.com/hmg-prod/images/2019-tesla-model3-lt-airporthero-low-101-1587061146.jpg)";
+        model.innerHTML = "Model 3";
+      };
+      mx.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://www.motortrend.com/uploads/2022/11/2023-Tesla-Model-X-2.jpg)";
+        model.innerHTML = "Model X";
+      };
+      my.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://cdn.motor1.com/images/mgl/Rq9JQA/s3/tesla-model-y.jpg)";
+        model.innerHTML = "Model Y";
+      };
+    </script>
+  </body>
+</html>
